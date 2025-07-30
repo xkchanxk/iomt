@@ -326,7 +326,7 @@ def init_state():
     global idle_buffer, active_buffer
     global idle_dir, active_dir, DATA_MODE
 
-    DATA_MODE = 'acc'
+    DATA_MODE = 'acc'#TEST
 
     x_vals = deque(maxlen=100)
     y_vals = [deque(maxlen=100) for _ in range(3)]
@@ -428,4 +428,4 @@ if __name__ == '__main__':
         device = DeviceModel("MyBluetoothDevice", device_mac, updateData)
         asyncio.run(device.openDevice())
     else:
-        print("No Bluetooth device corresponding to Mac address found!!")
+        print("No Bluetooth device corresponding to Mac address found TESTTTTTT!!")
